@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
-function Actors() {
+function Actors(actors) {
   return (
     <>
       <header>
@@ -9,6 +9,12 @@ function Actors() {
       <main>
         {/* Actor info here! */}
       </main>
+      <article>
+        <h2>{actors.name}</h2>
+        <ul>
+          {actors.movies}
+        </ul>
+      </article>
     </>
   );
 };

@@ -1,10 +1,29 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
   return (
     <nav className="navbar">
-    
+    < Link />
+    <NavLink
+    to="/"
+    className="nav-link"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    to="/directors"
+    className="nav-link"
+  >
+    Directors
+  </NavLink>
+  <NavLink
+    to="/actors"
+    className="nav-link"
+  >
+    Actors
+  </NavLink>
+    <Link />
     </nav>
     );
 };
